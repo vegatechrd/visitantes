@@ -1,0 +1,77 @@
+.color-primario{
+    background-color: #165b30;
+    color: #fff;
+}
+button.color-primario:hover{
+    background-color: #228548;
+    color: rgb(255, 255, 255);
+}
+
+.color-secundario{
+    background-color: #aea322;
+    color: rgb(255, 255, 255);
+}
+button.color-secundario:hover{
+    background-color: #cec02a;
+    color: rgb(255, 255, 255);
+}
+
+.color-alerta-errores{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.modal-style{
+    border: 0px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 0px;
+}
+
+.header-modal{
+    background: #165b30;
+    color: #FFF;
+}
+
+.color-select{
+    background-color: #165b3021;
+    color: rgb(34, 34, 34);
+}
+.color-select:hover{
+    background-color: #165b3021;
+    color: rgb(34, 34, 34);
+}
+
+@media (max-width: 476px){
+    
+    .hidden-letters{display: none;}
+}
+
+
+
+.image-upload > input
+    {
+        display: none;
+    }
+ .none {
+    display: none;
+}
+
+.imgFotowh {
+
+width: 320px;
+height: 240px;
+}
+
+.div_foto {
+
+width: 325px;
+height: 245px;
+border: 2px dashed #d3d3d3;
+
+}
+

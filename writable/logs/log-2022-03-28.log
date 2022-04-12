@@ -1,0 +1,925 @@
+CRITICAL - 2022-03-28 08:05:26 --> include_once(/var/www/html/visitantes/app/ThirdParty/fpdf/mc_table.php): Failed to open stream: No such file or directory
+#0 /var/www/html/visitantes/system/Autoloader/Autoloader.php(128): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/Autoloader/Autoloader.php(128): include_once()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(481): CodeIgniter\Autoloader\Autoloader->CodeIgniter\Autoloader\{closure}()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-28 08:20:38 --> include_once(/var/www/html/visitantes/app/ThirdParty/fpdf/mc_table.php): Failed to open stream: No such file or directory
+#0 /var/www/html/visitantes/system/Autoloader/Autoloader.php(128): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/Autoloader/Autoloader.php(128): include_once()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(481): CodeIgniter\Autoloader\Autoloader->CodeIgniter\Autoloader\{closure}()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-28 08:22:34 --> getimagesize(http://localhost/visitantes/dist/img/logo.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/app/ThirdParty/fpdf/fpdf.php(1238): getimagesize()
+#2 /var/www/html/visitantes/app/ThirdParty/fpdf/fpdf.php(885): FPDF->_parsejpg()
+#3 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-28 08:23:22 --> FPDF error: Unsupported image type: svg
+#0 /var/www/html/visitantes/app/ThirdParty/fpdf/fpdf.php(884): FPDF->Error()
+#1 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-28 08:24:09 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:33 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:35 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:42 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:24:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:40 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:42 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:42 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:42 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:42 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:43 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:44 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:25:45 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:26:19 --> Class "PDF" not found
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 08:26:28 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:26:29 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:26:30 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:26:30 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(487): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:29:49 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(486): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:31:27 --> Undefined array key "doc_departamento"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(530): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 08:38:29 --> Undefined variable $cont
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(535): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_general()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:27:10 --> Call to undefined method App\Controllers\Visitas::getAllDocumentsbyDate()
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 10:27:29 --> Call to undefined method App\Models\VisitasModel::getAllDocumentsbyDate
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(579): CodeIgniter\Model->__call()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:27:41 --> Call to undefined method App\Models\VisitasModel::getAllDocumentsbyDate
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(579): CodeIgniter\Model->__call()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:28:23 --> Undefined property: App\Controllers\Visitas::$documentos
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(580): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:29:36 --> Unsupported operand types: string * float
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(586): FPDF->Image()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:29:49 --> Trying to access array offset on value of type null
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(625): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:31:20 --> Trying to access array offset on value of type null
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(625): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:40:43 --> Call to undefined method App\Controllers\Visitas::select()
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 10:41:13 --> Call to undefined method App\Controllers\Visitas::from()
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DatesReport()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 10:44:02 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:44:07 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:44:12 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:44:41 --> syntax error, unexpected integer "2022", expecting ")"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 10:57:08 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/visitantes/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(18): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(908): App\Controllers\Visitas->__construct()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-28 10:57:31 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/visitantes/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(18): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(908): App\Controllers\Visitas->__construct()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-28 10:57:34 --> syntax error, unexpected variable "$fecha_desde", expecting ")"
+#0 /var/www/html/visitantes/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/visitantes/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(18): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(908): App\Controllers\Visitas->__construct()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-28 11:16:46 --> Undefined variable $instituciones
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_personas_visitadas.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(660): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_personas_visitadas()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 11:19:38 --> Undefined constant "App\Controllers\this"
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_personas_visitadas()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 11:30:34 --> Undefined variable $dato
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(689): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->PersonasVisitadasReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 11:31:01 --> Undefined variable $dato
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(689): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->PersonasVisitadasReport()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 12:50:23 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:50:26 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:50:41 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:50:56 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:52:14 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:52:17 --> Cannot redeclare App\Controllers\Visitas::PersonasVisitadasReport()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-28 12:52:41 --> Undefined variable $departamentos
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(757): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 12:53:55 --> Undefined variable $departamentos
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(757): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 12:54:05 --> Undefined variable $departamentos_visitados
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(757): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 12:56:50 --> Undefined variable $departamentos_visitados
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(757): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 12:56:52 --> Undefined variable $departamentos_visitados
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(757): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 12:57:19 --> syntax error, unexpected token "public"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 13:08:10 --> syntax error, unexpected token "public", expecting end of file
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 13:08:36 --> Undefined variable $departamentos_visitados
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(758): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 13:09:08 --> Undefined array key "id"
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(758): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 13:09:10 --> Undefined array key "id"
+#0 /var/www/html/visitantes/app/Views/reportes/reporte_departamentos.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(758): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-28 13:09:59 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.empleados_visitados.id_empleado_visitado' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Controllers/Visitas.php(748): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-28 13:09:59 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.empleados_visitados.id_empleado_visitado' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Controllers/Visitas.php(748): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-28 13:30:00 --> syntax error, unexpected token "public"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 13:30:23 --> Call to undefined method App\Controllers\Visitas::getDepartamentos()
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-28 13:51:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(748): App\Models\EmpleadosVisitadosModel->getDepartamentos()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->reporte_departamentos()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-28 13:53:43 --> syntax error, unexpected token "public", expecting end of file
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-28 13:59:58 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 13:59:58 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:44 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:44 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:47 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:47 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:47 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:48 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:48 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:48 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:48 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:49 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:49 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-03-28 14:00:49 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/visitantes/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-28 14:00:49 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'bd_visitantes.v.id_visita' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+#0 /var/www/html/visitantes/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/visitantes/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/visitantes/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/visitantes/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/visitantes/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/visitantes/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/visitantes/app/Models/VisitasModel.php(144): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/visitantes/app/Controllers/Visitas.php(772): App\Models\VisitasModel->getAllVisitasbyDepartamento()
+#8 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->DepartamentosReport()
+#9 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}

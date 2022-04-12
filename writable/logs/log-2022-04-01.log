@@ -1,0 +1,104 @@
+CRITICAL - 2022-04-01 12:44:23 --> unlink(fotos/foto_camara.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(fotos/fo...', 'C:\\laragon\\www\\...', 170, Array)
+#1 C:\laragon\www\visitantes\app\Controllers\Visitas.php(170): unlink('fotos/foto_cama...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->procesar_camara()
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-01 12:53:08 --> Undefined variable: borrar
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 193, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->eliminarFotoCam()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-01 12:56:00 --> unlink(fotos/foto_camara.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(fotos/fo...', 'C:\\laragon\\www\\...', 170, Array)
+#1 C:\laragon\www\visitantes\app\Controllers\Visitas.php(170): unlink('fotos/foto_cama...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->procesar_camara()
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-01 14:07:48 --> rename(/fotos/foto_camara.jpg,fotos/7/110.jpg): El sistema no puede encontrar la ruta especificada. (code: 3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(/fotos/f...', 'C:\\laragon\\www\\...', 306, Array)
+#1 C:\laragon\www\visitantes\app\Controllers\Visitas.php(306): rename('/fotos/foto_cam...', 'fotos/7/110.jpg')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-01 14:10:35 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 286, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-01 14:10:41 --> mysqli_sql_exception: Column 'nombres' cannot be null in C:\laragon\www\visitantes\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\visitantes\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `vi...')
+#1 C:\laragon\www\visitantes\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vi...')
+#2 C:\laragon\www\visitantes\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vi...')
+#3 C:\laragon\www\visitantes\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vi...', Array, false)
+#4 C:\laragon\www\visitantes\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\visitantes\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\visitantes\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\visitantes\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\visitantes\app\Controllers\Visitas.php(225): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#10 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#11 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-01 14:10:43 --> Column 'nombres' cannot be null
+#0 C:\laragon\www\visitantes\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `vi...')
+#1 C:\laragon\www\visitantes\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vi...')
+#2 C:\laragon\www\visitantes\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vi...')
+#3 C:\laragon\www\visitantes\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vi...', Array, false)
+#4 C:\laragon\www\visitantes\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\visitantes\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\visitantes\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\visitantes\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\visitantes\app\Controllers\Visitas.php(225): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#10 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#11 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-01 14:11:20 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 286, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-01 14:13:54 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 286, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-01 14:16:05 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 286, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-01 14:16:39 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 286, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-01 14:36:50 --> Undefined variable: destination
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 283, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

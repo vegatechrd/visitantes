@@ -1,0 +1,531 @@
+CRITICAL - 2022-03-16 08:34:42 --> Undefined array key "equipos"
+#0 /var/www/html/visitantes/app/Views/visitas/edit.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-16 08:34:57 --> Undefined array key "motivo_id"
+#0 /var/www/html/visitantes/app/Views/visitas/edit.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-16 08:35:15 --> Undefined array key "institucion_id"
+#0 /var/www/html/visitantes/app/Views/visitas/edit.php(141): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-16 08:35:23 --> Undefined array key "total_visitantes"
+#0 /var/www/html/visitantes/app/Views/visitas/edit.php(155): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/View/View.php(220): include('...')
+#2 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-16 08:25:15 --> Call to undefined method App\Models\VisitasModel::obtener_visitas_presencia
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(41): CodeIgniter\Model->__call()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->index()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 08:31:57 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:37 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:38 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:39 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:39 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:39 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:39 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:40 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:32:40 --> syntax error, unexpected single-quoted string "Puesto: ", expecting "," or ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:33:44 --> Undefined constant "n"
+#0 /var/www/html/visitantes/system/View/View.php(220): include()
+#1 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-16 08:44:47 --> syntax error, unexpected token ".", expecting end of file
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:54:43 --> Undefined constant "n"
+#0 /var/www/html/visitantes/system/View/View.php(220): include()
+#1 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-16 08:54:46 --> Undefined constant "n"
+#0 /var/www/html/visitantes/system/View/View.php(220): include()
+#1 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-16 08:54:57 --> syntax error, unexpected fully qualified name "\n"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:10 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:11 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:12 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:12 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:13 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:13 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:13 --> syntax error, unexpected single-quoted string "Otra Cosa"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:27 --> Undefined constant "n"
+#0 /var/www/html/visitantes/system/View/View.php(220): include()
+#1 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-16 08:55:35 --> syntax error, unexpected token ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:48 --> syntax error, unexpected fully qualified name "\n"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:55:55 --> syntax error, unexpected token ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:56:09 --> syntax error, unexpected token ";"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:56:19 --> syntax error, unexpected token ".", expecting end of file
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 08:56:26 --> syntax error, unexpected token ".", expecting end of file
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:18 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:51 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:53 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:53 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:54 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:01:54 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:02:19 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 09:08:14 --> syntax error, unexpected fully qualified name "\n"
+#0 /var/www/html/visitantes/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/html/visitantes/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /var/www/html/visitantes/app/Controllers/Visitas.php(108): view()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->edit()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-16 10:22:39 --> Illegal offset type in isset or empty
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-16 10:34:50 --> Undefined array key "nombre_empleado"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 10:53:53 --> Undefined array key "foto_frente"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 10:54:24 --> Undefined array key "foto_frente"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 10:56:57 --> Undefined array key "foto_frente"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 10:59:34 --> Cannot access offset of type string on string
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-16 10:59:45 --> Cannot access offset of type string on string
+#0 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-16 11:04:20 --> Undefined array key "foto_frente"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(124): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 11:17:21 --> Undefined array key "array_datos"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 11:39:16 --> Unclosed '[' does not match '}'
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 11:39:50 --> Undefined array key "image"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 11:40:57 --> Undefined array key "image"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 11:42:01 --> Undefined array key "image"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(122): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 12:57:53 --> syntax error, unexpected token "{"
+#0 /var/www/html/visitantes/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 13:41:01 --> Undefined property: App\Controllers\Visitas::$load
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 13:43:00 --> Undefined property: App\Controllers\Visitas::$load
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 13:46:45 --> Undefined property: App\Controllers\Visitas::$load
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 13:57:51 --> move_uploaded_file(images/1.jpeg): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/app/Controllers/Visitas.php(125): move_uploaded_file()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-16 14:14:00 --> Undefined array key "foto"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(121): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 14:17:11 --> Undefined array key "array_datos"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(119): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 14:28:04 --> Undefined array key "array_datos"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(119): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 14:34:35 --> Undefined array key "foto_frente"
+#0 /var/www/html/visitantes/app/Controllers/Visitas.php(125): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/visitantes/system/CodeIgniter.php(936): App\Controllers\Visitas->insert()
+#2 /var/www/html/visitantes/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/visitantes/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/visitantes/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

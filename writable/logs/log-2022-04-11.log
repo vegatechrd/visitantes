@@ -1,0 +1,187 @@
+CRITICAL - 2022-04-11 10:24:08 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:13 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:15 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:15 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:15 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:16 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:25:17 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:26:06 --> FPDF error: Not a JPEG file: http://localhost/visitantes/dist/img/silueta.png
+#0 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1242): FPDF->Error('Not a JPEG file...')
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#2 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 8, 45, 0, 'jpg')
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('204')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 10:32:57 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(524): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 524, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('205')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:33:27 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(524): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 524, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('205')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:33:52 --> syntax error, unexpected 'foto' (T_STRING)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/printGa...')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/printGa...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:35:02 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(524): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 524, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('205')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:35:27 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(530): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 530, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('205')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:36:46 --> getimagesize(http://localhost/visitantesfotos/31/211.jfif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 10:38:41 --> getimagesize(http://localhost/visitantesfotos/31/211.jfif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 10:38:45 --> getimagesize(http://localhost/visitantesfotos/31/211.jfif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 10:38:50 --> getimagesize(http://localhost/visitantesfotos/31/211.jfif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 10:38:58 --> getimagesize(http://localhost/visitantesfotos/31/211.jfif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 10:39:39 --> getimagesize(http://localhost/visitantesfotos/31/211.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(525): FPDF->Image('http://localhos...', 10, 13, 35, 0, 'jpg')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-11 11:50:27 --> Undefined index: hora
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(543): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 543, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printGafete('211')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 11:52:40 --> syntax error, unexpected ';', expecting ')'
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/printGa...')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/printGa...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,115 @@
+CRITICAL - 2022-03-31 08:37:28 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/create')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/create')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:51:42 --> syntax error, unexpected '$estados_documentos' (T_VARIABLE)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:51:44 --> syntax error, unexpected '$estados_documentos' (T_VARIABLE)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/view_hi...')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/view_hi...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:51:46 --> syntax error, unexpected '$estados_documentos' (T_VARIABLE)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/histori...')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/histori...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:51:48 --> syntax error, unexpected '$estados_documentos' (T_VARIABLE)
+#0 C:\laragon\www\visitantes\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('visitas/view/10...')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(816): CodeIgniter\Router\Router->handle('visitas/view/10...')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:56:16 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(873): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 873, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 10:57:20 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(873): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 873, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 11:11:10 --> Undefined index: doc_id
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(893): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 893, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 11:11:51 --> Undefined index: doc_id
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(893): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 893, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 11:31:44 --> Undefined index: tipo_identificacion
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(901): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 901, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 11:32:37 --> Undefined index: nombre
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(924): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 924, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 11:32:59 --> Undefined index: institucion
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(939): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 939, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 13:28:33 --> Call to undefined function App\Controllers\ut8_decode()
+#0 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-31 13:57:06 --> Undefined index: motivo
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(951): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 951, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 13:57:11 --> Undefined index: motivos
+#0 C:\laragon\www\visitantes\app\Controllers\Visitas.php(951): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 951, Array)
+#1 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#2 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#3 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-31 14:15:26 --> getimagesize(http://localhost/visitantes/fotos/fotos/8/108.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(ht...', 'C:\\laragon\\www\\...', 1238, Array)
+#1 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhos...')
+#2 C:\laragon\www\visitantes\app\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhos...')
+#3 C:\laragon\www\visitantes\app\Controllers\Visitas.php(966): FPDF->Image('http://localhos...', 45, 85, 30, 'JPG')
+#4 C:\laragon\www\visitantes\system\CodeIgniter.php(936): App\Controllers\Visitas->printVisita('108')
+#5 C:\laragon\www\visitantes\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visitas))
+#6 C:\laragon\www\visitantes\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\visitantes\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
