@@ -60,7 +60,7 @@
 </table>
 </div>
 <div class="col-md-3">
-    <img id="imgFrente" width="200px" height="200px" style="border: 2px solid #555;" src="<?php if($datos['foto'] != NULL) { echo base_url().'/'.$datos['foto']; } 
+    <img id="imgFrente" width="200px" height="200px" style="border: 2px solid #555;" src="<?php if($datos['foto'] != '') { echo base_url().'/'.$datos['foto']; } 
     else { echo base_url().'/dist/img/silueta.png';}?>">
 </div>
 </div>
@@ -96,7 +96,8 @@
 </table>
 
 <hr>
-<h5>Status Visita: <?php if(empty($datos['hora_salida'])) { $act = 'ACTIVA';} else { $act = 'CONCLUIDA';}?><b><?php echo $act;?></b></h5>
+</i><h5>Status Visita: <?php if(empty($datos['hora_salida'])) { echo '<span class="badge bg-success">ACTIVA</span>';} else { echo '<span class="badge bg-warning">CONCLUIDA</span>';}?></h5>
+
 </fieldset>
 </div>
 </div>
