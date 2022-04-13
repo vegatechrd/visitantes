@@ -14,7 +14,7 @@ Aplicación que se creó para llevar el control de las personas que visitan una 
 
 Tecnología Usada:
 
-Framework: Codeigniter
+Framework: Codeigniter4
 Template: AdminLTE 3
 JQuery
 Javascript
