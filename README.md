@@ -11,3 +11,10 @@ Aplicación que se creó para llevar el control de las personas que visitan una 
 - Ver Histórico de visitas.
 - Configuración (Instituciones, Motivos de la visita).
 - Reportes (Reporte General, Reporte por Rango de Fechas, Reporte por Departamento, Reporte por Empleado Visitado).
+
+Tecnología Usada:
+
+Framework: Codeigniter
+Template: AdminLTE 3
+JQuery
+Javascript
