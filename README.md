@@ -1,20 +1,9 @@
 # Visitantes
 App Gestión Visitantes
-
-Aplicación que se creó para llevar el control de las personas que visitan una empresa o institución. Entre las cuales se pueden realizar:
-
-- Crear Visitas.
-- Crear Visitantes.
-- Consultar Visitas.
-- Consultar Visitantes.
-- Dar Salida a las visitas.
-- Ver Histórico de visitas.
-- Configuración (Instituciones, Motivos de la visita).
-- Reportes (Reporte General, Reporte por Rango de Fechas, Reporte por Departamento, Reporte por Empleado Visitado).
-
-Tecnología Usada:
-
-Framework: Codeigniter4
-Template: AdminLTE 3
-JQuery
-Javascript
+----------------------------------------------------------------------------------------------------------------------
+2022-04-18
+- Se agregó el botón de Imprimir Gafete a la vista Gestión de Visitas, en la parte de opciones.
+----------------------------------------------------------------------------------------------------------------------
+2022-04-13
+- Se agregó el archivo .gitignore.
+- Se corrigió un error en la vista de View Histórico de visitas ya que la imagen no se mostraba bien.
