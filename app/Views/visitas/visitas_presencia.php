@@ -83,6 +83,7 @@
                 }else{  ?>
                       <a href="<?php echo base_url().'/visitas/view/'.$visita['id_visita'];?>" title="Ver Detalles Visita" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></a>
            <a href="<?php echo base_url().'/visitas/edit/'.$visita['id_visita'];?>" title="Editar Visita" class="btn btn-sm btn-success"><i class="fas fa-pencil-alt"></i></a>
+           <a href="<?php echo base_url().'/visitas/printGafete/'.$visita['id_visita'];?>" target="_blank" title="Imprimir Gafete Visita" class="btn btn-sm btn-warning"><i class="fas fa-print"></i></a>
        <?php } ?>
       <?php  if ($privs['D'] <> "S") {
                     
