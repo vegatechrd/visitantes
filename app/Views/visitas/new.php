@@ -122,21 +122,14 @@
 
 <div class="col-xl-4 col-md-6 col-sm-6">
 
-  <div class="form-row">
-    <div class="form-group col-xl-11 col-md-10">
+    <div class="form-group">
      <label for="listEmpleados" class="form-label">A Quien Visita<span class="text-danger"> *</span></label>
    <select class="form-control" id="listEmpleados" name="listEmpleados" data-style="color-select" data-live-search="true" required>
     <option value="">Seleccione Persona Va a Visitar</option>
    
 </select>
     </div>
-   
-   <div class="form-group col-md-2 col-xl-1 align-self-end">
-  <button type="button" id="btnVerInfoEmpleado" name="btnVerInfoEmpleado" class="btn btn-secondary" title="Ver Más Información A Quien Visita"><i class="fas fa-eye"></i></button>
-</div>
-   
-  </div>
-
+  
   <div class="form-group">
 <label for="SelectTipoDocumento">Datos A Quien Visita</label>
 <textarea id="infoVisitado" name="infoVisitado" class="form-control bg-light" rows="4" cols="4" disabled></textarea> 
