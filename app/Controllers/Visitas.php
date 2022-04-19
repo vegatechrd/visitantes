@@ -27,7 +27,7 @@
             $this->motivos = $this->tablaMotivos->where('status', 1)->findAll();
             $this->tablaEmpleadosVisitados = new EmpleadosVisitadosModel;
             $this->visitantes = $this->tablaVisitantes->where('status', 1)->findAll(); 
-
+            $this->departamentos_visitados = $this->tablaEmpleadosVisitados->getDepartamentos();
           
         }
 
@@ -59,6 +59,19 @@
                 die();
            }
         }
+
+        public function reportes(){
+
+           
+
+            $data = ['titulo' => 'Reportes',  'instituciones' => $this->instituciones, 'motivos' => $this->motivos,'visitantes' => $this->visitantes,
+                    'departamentos_visitados' => $this->departamentos_visitados];
+                
+                echo  view ('templates/header');
+                echo  view ('templates/sidebar');
+                echo  view ('reportes/reporte_dinamico', $data);
+                echo  view ('templates/footer');
+            }
 
         public function create(){
             
@@ -523,34 +536,7 @@ die();
 
    } 
 
-
-public function reporte_fechas() {
-
- if (empty($this->session->idUsuario)) {
-                
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-            }
-
-            if ($this->privilegios_CRUD['R'] == "S") {
-
-                      
-                $data = ['titulo' => "Menú Reportes",
-                         'privs' => $this->privilegios_CRUD
-                         ];
-    
-                echo view ('templates/header');
-                echo view ('templates/sidebar');
-                echo view ('reportes/reporte_fechas', $data);   // Aquí va pagina principal a mostrar al abrir app
-                echo view ('templates/footer');
-            }else{
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-           }
-}
-
-
- public function reporte_general() {
+public function reporte_general() {
 
 $datos = $this->tabla->GetAllHistory();
 
@@ -619,268 +605,6 @@ $pdf->Output('Reporte_General.pdf', 'I');
 
 }
 
-public function DatesReport($fecha1, $fecha2) {
-
-$fecha_desde = date('Y-m-d', strtotime($fecha1));
-$fecha_hasta = date('Y-m-d', strtotime($fecha2));
-
-$datos = $this->tabla->getAllVisitasbyDate($fecha_desde, $fecha_hasta);
-
-$pdf = new \PDF_MC_Table('L', 'mm', 'letter');
-$pdf->AddPage();
-$pdf->SetMargins(10,10,0);
-$pdf->SetAutoPageBreak(false,0);
-
-$pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
-$pdf->SetXY(110,15);
-$pdf->SetFont('Arial','B',13);
-
-$pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-$pdf->SetXY(133,21);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-$pdf->SetXY(102,27);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(100,5,utf8_decode('Reporte De Visitas desde '.$fecha1.' hasta '.$fecha2), 0, 1, 'L');
-
-$pdf->SetLineWidth(0.7);
-$pdf->SetDrawColor(13,90,46);
-$pdf->Line(10,41,268,41);
-$pdf->SetDrawColor(174, 163, 34);
-$pdf->SetLineWidth(0.7);
-$pdf->Line(10,43,268,43);
-
-$pdf->Ln(18);
-$pdf->SetDrawColor(0,0,0);
-$pdf->SetTextColor(255,255,255);
-$pdf->SetFont('Arial','B',9);
-$pdf->SetLineWidth(0.3);
-$pdf->SetFillColor(13,90,46);
-$pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
-$pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
-$pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
-$pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
-$pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
-$pdf->SetFont('Arial','',8);
-$pdf->Ln();
-$pdf->SetWidths(array(20,35,20,62,78,23,20));
-$pdf->SetFont('Arial','',8);
-$pdf->SetTextColor(0,0,0);
-if ($datos) {
-foreach ($datos as $dato) {
-$pdf->Row(array(
-date("d/m/Y", strtotime($dato['fecha'])),    
-utf8_decode($dato['nombres'].' '.$dato['apellidos']),
-utf8_decode($dato['identidad']),
-utf8_decode($dato['empleado']),
-utf8_decode($dato['departamento']),
-date('h:i A', strtotime($dato['hora_entrada'])),
-date('h:i A', strtotime($dato['hora_salida'])),
-));
-}
-}
-else {    
-$pdf->Cell(258,6,"No se encontraron Datos",1,0,'C');
-}
-
-$this->response->setHeader('Content-Type', 'application/pdf');
-$pdf->Output('Reporte_Rango_Fechas.pdf', 'I');
-}
-
-
-public function reporte_personas_visitadas() {
-
- if (empty($this->session->idUsuario)) {
-                
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-            }
-
-            if ($this->privilegios_CRUD['R'] == "S") {
-
-$personas_visitadas = $this->tablaEmpleadosVisitados->findAll();
-                      
-                $data = ['titulo' => "Menú Reportes",
-                         'personas' => $personas_visitadas,   
-                         'privs' => $this->privilegios_CRUD
-                         ];
-    
-                echo view ('templates/header');
-                echo view ('templates/sidebar');
-                echo view ('reportes/reporte_personas_visitadas', $data);   // Aquí va pagina principal a mostrar al abrir app
-                echo view ('templates/footer');
-            }else{
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-           }
-}
-
-public function PersonasVisitadasReport($codigo) {
-
-$datos = $this->tabla->getAllVisitasbyEmpleado($codigo);
-
-$pdf = new \PDF_MC_Table('L', 'mm', 'letter');
-$pdf->AddPage();
-$pdf->SetMargins(10,10,0);
-$pdf->SetAutoPageBreak(false,0);
-
-$pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
-$pdf->SetXY(110,15);
-$pdf->SetFont('Arial','B',13);
-
-$pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-$pdf->SetXY(133,21);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-$pdf->SetXY(130,27);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(100,5,utf8_decode('Reporte Personas Visitadas'), 0, 1, 'L');
-
-$pdf->SetLineWidth(0.7);
-$pdf->SetDrawColor(13,90,46);
-$pdf->Line(10,41,268,41);
-$pdf->SetDrawColor(174, 163, 34);
-$pdf->SetLineWidth(0.7);
-$pdf->Line(10,43,268,43);
-
-$pdf->Ln(18);
-$pdf->SetDrawColor(0,0,0);
-$pdf->SetTextColor(255,255,255);
-$pdf->SetFont('Arial','B',9);
-$pdf->SetLineWidth(0.3);
-$pdf->SetFillColor(13,90,46);
-$pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
-$pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
-$pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
-$pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
-$pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
-$pdf->SetFont('Arial','',8);
-$pdf->Ln();
-$pdf->SetWidths(array(20,35,20,62,78,23,20));
-$pdf->SetFont('Arial','',8);
-$pdf->SetTextColor(0,0,0);
-if ($datos) {
-foreach ($datos as $dato) {
-$pdf->Row(array(
-date("d/m/Y", strtotime($dato['fecha'])),    
-utf8_decode($dato['nombres'].' '.$dato['apellidos']),
-utf8_decode($dato['identidad']),
-utf8_decode($dato['empleado']),
-utf8_decode($dato['departamento']),
-date('h:i A', strtotime($dato['hora_entrada'])),
-date('h:i A', strtotime($dato['hora_salida'])),
-));
-}
-}
-else {
-$pdf->Cell(258,6,"No se encontraron Datos",1,0,'C');
-}
-$this->response->setHeader('Content-Type', 'application/pdf');
-$pdf->Output('Reporte_Rango_Fechas.pdf', 'I');
-}
-
- 
-public function reporte_departamentos() {
-
- if (empty($this->session->idUsuario)) {
-                
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-            }
-
-            if ($this->privilegios_CRUD['R'] == "S") {
-
-$departamentos_visitados = $this->tablaEmpleadosVisitados->getDepartamentos();
-
-              
-                $data = ['titulo' => "Menú Reportes",
-                         'departamentos' => $departamentos_visitados,   
-                         'privs' => $this->privilegios_CRUD
-                         ];
-    
-                echo view ('templates/header');
-                echo view ('templates/sidebar');
-                echo view ('reportes/reporte_departamentos', $data);   // Aquí va pagina principal a mostrar al abrir app
-                echo view ('templates/footer');
-            }else{
-                return redirect()->to(base_url().'/Dashboard');
-                die();
-           }
-
-}
-
-
-
-
-public function DepartamentosReport($departamento) {
-
-$datos = $this->tabla->getAllVisitasbyDepartamento($departamento);
-
-$pdf = new \PDF_MC_Table('L', 'mm', 'letter');
-$pdf->AddPage();
-$pdf->SetMargins(10,10,0);
-$pdf->SetAutoPageBreak(false,0);
-
-$pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
-$pdf->SetXY(110,15);
-$pdf->SetFont('Arial','B',13);
-
-$pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-$pdf->SetXY(133,21);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-$pdf->SetXY(127,27);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(100,5,utf8_decode('Reporte Visitas Departamento'), 0, 1, 'L');
-
-$pdf->SetLineWidth(0.7);
-$pdf->SetDrawColor(13,90,46);
-$pdf->Line(10,41,268,41);
-$pdf->SetDrawColor(174, 163, 34);
-$pdf->SetLineWidth(0.7);
-$pdf->Line(10,43,268,43);
-
-$pdf->Ln(18);
-$pdf->SetDrawColor(0,0,0);
-$pdf->SetTextColor(255,255,255);
-$pdf->SetFont('Arial','B',9);
-$pdf->SetLineWidth(0.3);
-$pdf->SetFillColor(13,90,46);
-$pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
-$pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
-$pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
-$pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
-$pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
-$pdf->SetFont('Arial','',8);
-$pdf->Ln();
-$pdf->SetWidths(array(20,35,20,62,78,23,20));
-$pdf->SetFont('Arial','',8);
-$pdf->SetTextColor(0,0,0);
-if ($datos) {
-foreach ($datos as $dato) {
-$pdf->Row(array(
-date("d/m/Y", strtotime($dato['fecha'])),    
-utf8_decode($dato['nombres'].' '.$dato['apellidos']),
-utf8_decode($dato['identidad']),
-utf8_decode($dato['empleado']),
-utf8_decode($dato['departamento']),
-date('h:i A', strtotime($dato['hora_entrada'])),
-date('h:i A', strtotime($dato['hora_salida'])),
-));
-}
-}
-else {
-$pdf->Cell(258,6,"No se encontraron Datos",1,0,'C');
-}
-$this->response->setHeader('Content-Type', 'application/pdf');
-$pdf->Output('Reporte_Rango_Fechas.pdf', 'I');
-}
 
 public function printVisita($idVisita) {
 
@@ -1078,6 +802,29 @@ public function printVisita($idVisita) {
     
     $this->response->setHeader('Content-Type', 'application/pdf');
     $pdf->Output('Reporte_Visita.pdf', 'I');
+    
+    }
+
+    public function consulta_dinamica_visitas() {
+    
+        $fecha_desde = $this->request->getPost('fecha_desde');
+       // $date = str_replace('/', '-', $fecha1);
+       // $fecha_desde = date('Y-m-d', strtotime($date)); 
+
+        $fecha_hasta = $this->request->getPost('fecha_hasta');  
+       // $date2 = str_replace('/', '-', $fecha2);
+       // $fecha_hasta = date('Y-m-d', strtotime($date2));
+        
+        $visitante = $this->request->getPost('visitante');  
+        $departamento = $this->request->getPost('departamento');
+        $empleado = $this->request->getPost('empleado'); 
+        $motivos = $this->request->getPost('motivos');  
+        $ordenar_por = $this->request->getPost('ordenar_por');
+        $asc_desc = $this->request->getPost('asc_desc');    
+    
+        $datos = $this->tabla->where('fecha BETWEEN "'.date('Y-m-d', strtotime($fecha_desde)). '" and "'. date('Y-m-d', strtotime($fecha_hasta)).'"');
+        $datos = $this->tabla->findAll();
+        echo json_encode($datos);
     
     }
 
