@@ -60,18 +60,7 @@
            }
         }
 
-        public function reportes(){
-
-           
-
-            $data = ['titulo' => 'Reportes',  'instituciones' => $this->instituciones, 'motivos' => $this->motivos,'visitantes' => $this->visitantes,
-                    'departamentos_visitados' => $this->departamentos_visitados];
-                
-                echo  view ('templates/header');
-                echo  view ('templates/sidebar');
-                echo  view ('reportes/reporte_dinamico', $data);
-                echo  view ('templates/footer');
-            }
+     
 
         public function create(){
             
@@ -805,27 +794,72 @@ public function printVisita($idVisita) {
     
     }
 
+    public function reportes(){
+    
+        $this->tabla->select('vt.nombres, vt.apellidos, v.no_gafete, ev.nombre as empleado, date_format(v.fecha, "%d-%m-%Y") as fecha, 
+            date_format(v.hora_entrada,"%h:%i %p") as hora_entrada, v.status, v.equipos, v.total_visitantes, vt.identidad, vt.tipo_identidad, 
+            ev.departamento, ev.extension, ev.puesto, v.foto, i.nombre_institucion, m.descripcion as motivo_visita, 
+            date_format(v.hora_salida,"%h:%i %p") as hora_salida, ev.email');
+        $this->tabla->from('visitas v');
+        $this->tabla->join('visitantes vt', 'v.visitante_id = vt.id_visitante', 'left');
+        $this->tabla->join('empleados_visitados ev', 'v.empleado_id = ev.codigo', 'left');
+        $this->tabla->join('instituciones i', 'v.institucion_id = i.id_institucion', 'left');
+        $this->tabla->join('motivos m', 'v.motivo_id = m.id_motivo', 'left');
+        $this->tabla->where('v.status !=', 2);
+        $this->tabla->where("v.fecha BETWEEN '".date('Y-m-01')."' AND '".date('Y-m-d')."'");
+        $this->tabla->orderBy('v.fecha', 'DESC');
+        $this->tabla->groupBy('v.id_visita');
+        $datos = $this->tabla->findAll();    
+           
+
+        $data = ['titulo' => 'Reportes',  'instituciones' => $this->instituciones, 'motivos' => $this->motivos,'visitantes' => $this->visitantes,
+                'departamentos_visitados' => $this->departamentos_visitados, 'datos' => $datos];
+            
+            echo  view ('templates/header');
+            echo  view ('templates/sidebar');
+            echo  view ('reportes/reporte_dinamico', $data);
+            echo  view ('templates/footer');
+        }
+
     public function consulta_dinamica_visitas() {
     
-        $fecha_desde = $this->request->getPost('fecha_desde');
-       // $date = str_replace('/', '-', $fecha1);
-       // $fecha_desde = date('Y-m-d', strtotime($date)); 
+        $fecha1 = $this->request->getPost('fecha_desde');
+        $date = str_replace('/', '-', $fecha1);
+        $fecha_desde = date('Y-m-d', strtotime($date)); 
 
-        $fecha_hasta = $this->request->getPost('fecha_hasta');  
-       // $date2 = str_replace('/', '-', $fecha2);
-       // $fecha_hasta = date('Y-m-d', strtotime($date2));
-        
-        $visitante = $this->request->getPost('visitante');  
+        $fecha2 = $this->request->getPost('fecha_hasta');  
+        $date2 = str_replace('/', '-', $fecha2);
+        $fecha_hasta = date('Y-m-d', strtotime($date2));
+      
+        $visitante = $this->request->getPost('visitante');
         $departamento = $this->request->getPost('departamento');
         $empleado = $this->request->getPost('empleado'); 
         $motivos = $this->request->getPost('motivos');  
         $ordenar_por = $this->request->getPost('ordenar_por');
-        $asc_desc = $this->request->getPost('asc_desc');    
-    
-        $datos = $this->tabla->where('fecha BETWEEN "'.date('Y-m-d', strtotime($fecha_desde)). '" and "'. date('Y-m-d', strtotime($fecha_hasta)).'"');
-        $datos = $this->tabla->findAll();
-        echo json_encode($datos);
-    
+        $asc_desc = $this->request->getPost('asc_desc');   
+        
+        
+            $this->tabla->select('vt.nombres, vt.apellidos, v.no_gafete, ev.nombre as empleado, date_format(v.fecha, "%d-%m-%Y") as fecha, 
+            date_format(v.hora_entrada,"%h:%i %p") as hora_entrada, v.status, v.equipos, v.total_visitantes, vt.identidad, vt.tipo_identidad, 
+            ev.departamento, ev.extension, ev.puesto, v.foto, i.nombre_institucion, m.descripcion as motivo_visita, 
+            date_format(v.hora_salida,"%h:%i %p") as hora_salida, ev.email');
+            $this->tabla->from('visitas v');
+            $this->tabla->join('visitantes vt', 'v.visitante_id = vt.id_visitante', 'left');
+            $this->tabla->join('empleados_visitados ev', 'v.empleado_id = ev.codigo', 'left');
+            $this->tabla->join('instituciones i', 'v.institucion_id = i.id_institucion', 'left');
+            $this->tabla->join('motivos m', 'v.motivo_id = m.id_motivo', 'left');
+            $this->tabla->where('v.status !=', 2);
+            $this->tabla->where("v.fecha BETWEEN '$fecha_desde' AND '$fecha_hasta'");
+            if ($visitante != 'TODOS') { $this->tabla->where("v.visitante_id", $visitante);}
+            if ($departamento != 'TODOS') { $this->tabla->where("ev.departamento", $departamento);}
+            if ($empleado != 'TODOS') { $this->tabla->where("v.empleado_id", $empleado);}
+            if ($motivos != 'TODOS') { $this->tabla->where("v.motivo_id", $motivos);}
+            $this->tabla->orderBy($ordenar_por, $asc_desc);
+            $this->tabla->groupBy('v.id_visita');
+            $datos = $this->tabla->findAll();
+            
+            echo json_encode($datos,JSON_UNESCAPED_UNICODE);
+            die();     
     }
 
 

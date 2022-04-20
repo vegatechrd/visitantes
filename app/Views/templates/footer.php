@@ -41,6 +41,7 @@
     },
      "paging": true,
      "ordering": false
+	 
 	});
 
 	var oTable = $('.data-table').DataTable();
