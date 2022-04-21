@@ -68,6 +68,13 @@ $sesionU = session();
 	<script src="<?php echo base_url(); ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 	<!-- scripts select picker -->
 	<script src="<?php echo base_url(); ?>/plugins/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
+	<!-- inputmask -->
+	<script src="<?php echo base_url(); ?>/plugins/inputmask/jquery.inputmask.min.js"></script>
+	
+  <!-- JSPDF -->   
+    <script type="text/javascript" src="<?php echo base_url();?>/plugins/jspdf/jspdf.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>/plugins/jspdf/jspdf.plugin.autotable.js"></script>  
+	<script type="text/javascript" src="<?php echo base_url();?>/dist/js/mis_funciones.js"></script> 
 
 </head>
 

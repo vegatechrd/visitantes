@@ -862,6 +862,70 @@ public function printVisita($idVisita) {
             die();     
     }
 
+    public function printReportes() {
+
+        $fechas = json_decode($_POST['fechas'], true);
+        $visitas = json_decode($_POST['visitas'], true);
+        
+        $pdf = new \PDF_MC_Table('L', 'mm', 'letter');
+        $pdf->AddPage();
+        $pdf->SetMargins(10,10,0);
+        $pdf->SetAutoPageBreak(false,0);
+        
+        $pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
+        $pdf->SetXY(110,15);
+        $pdf->SetFont('Arial','B',13);
+        
+        $pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
+        $pdf->SetXY(133,21);
+        $pdf->SetFont('Arial','B',13);
+        $pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
+        $pdf->SetXY(112,27);
+        $pdf->SetFont('Arial','B',13);
+        $pdf->Cell(90,5,utf8_decode('REPORTE VISITAS'.$fechas[0]['fecha_desde']), 0, 1, 'L');
+                
+        $pdf->SetLineWidth(0.7);
+        $pdf->SetDrawColor(13,90,46);
+        $pdf->Line(10,41,268,41);
+        $pdf->SetDrawColor(174, 163, 34);
+        $pdf->SetLineWidth(0.7);
+        $pdf->Line(10,43,268,43);
+        
+        $pdf->Ln(18);
+        $pdf->SetDrawColor(0,0,0);
+        $pdf->SetTextColor(255,255,255);
+        $pdf->SetFont('Arial','B',9);
+        $pdf->SetLineWidth(0.3);
+        $pdf->SetFillColor(13,90,46);
+        $pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
+        $pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
+        $pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
+        $pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
+        $pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
+        $pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
+        $pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
+        $pdf->SetFont('Arial','',8);
+        $pdf->Ln();
+        $pdf->SetWidths(array(20,35,20,62,78,23,20));
+        $pdf->SetFont('Arial','',8);
+        $pdf->SetTextColor(0,0,0);
+        foreach ($visitas as $dato) {
+        $pdf->Row(array(
+        date("d/m/Y", strtotime($dato['fecha'])),    
+        utf8_decode($dato['nombres'].' '.$dato['apellidos']),
+        utf8_decode($dato['identidad']),
+        utf8_decode($dato['empleado']),
+        utf8_decode($dato['departamento']),
+        date('h:i A', strtotime($dato['hora_entrada'])),
+        date('h:i A', strtotime($dato['hora_salida'])),
+        ));
+        }    
+        $this->response->setHeader('Content-Type', 'application/pdf');
+        $pdf->Output('Reporte_General.pdf', 'I');
+        
+        
+        }
+
 
     } //End Function Construct
 ?>

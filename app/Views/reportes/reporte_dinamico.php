@@ -117,16 +117,14 @@
            <br>
                   <div class="row" id="div_botones">
                   <div class="form-group col-sm-1 align-self-end">
-                            <button class="btn btn-outline-info btn-block btn-sm" id="btnImprimirPDF" name="btnImprimirPDF">
+                            <button class="btn btn-outline-success btn-block btn-sm" id="btnImprimirPDF" name="btnImprimirPDF">
                             <i class="fa-solid fa-file-pdf"></i> &nbsp;&nbsp;Generar PDF</button>
                         </div>
-                        <div class="form-group col-sm-1 align-self-end">
-                            <button class="btn btn-outline-info btn-block btn-sm" id="btnImprimirXLS" name="btnImprimirXLS">
-                            <i class="fa-solid fa-file-excel"></i> &nbsp;&nbsp;Generar XLS</button>
-                        </div> 
+                       
                         </div>            
-                    <div class="row">  
-                            <table id="tabla_resultados" class="table table-striped table-sm">
+                    <div class="row"> 
+                      
+                            <table id="tabla_resultados" name="tabla_resultados" class="table table-striped table-sm">
                                 <thead>
                                     <tr>
                                 <th>Fecha</th>
@@ -134,9 +132,9 @@
                                 <th>Identidad</th>
                                 <th>Persona Visitada</th>
                                 <th>Departamento</th>
-                                <th>Motivo Visita</th>
-                                <th>Hora Entrada</th>
-                                <th>Hora Salida</th>
+                                <th>Motivo</th>
+                                <th>Entrada</th>
+                                <th>Salida</th>
                                 <th>Status</th>
                                 </tr>
                                 </thead>
@@ -162,7 +160,8 @@
                                 </tr>
                                 <?php endforeach ?>
                                 </tbody>
-                                </table>   
+                                </table> 
+                               
                     </div> <!-- row -->  
                 </div>               
         </div>     
@@ -221,21 +220,6 @@ $("#listEmpleados").selectpicker('render');
 
 $(document).on('click', '#btnLimpiarCampos', function() {  
 
-//   $('#txtFechaDesde').val("<?php echo date("01/m/Y");?>");
-//   $('#txtFechaHasta').val("<?php echo date("d/m/Y");?>");
-//   $('#listVisitante').val('TODOS');
-//   $("#listVisitante").selectpicker('render'); 
-//   $('#listDepartamento').val('TODOS'); 
-//   $("#listDepartamento").selectpicker('render');    
-//   $('#listEmpleados').val('TODOS');
-//   $("#listEmpleados").selectpicker('render'); 
-//   $('#listMotivos').val('TODOS'); 
-//   $("#listMotivos").selectpicker('render'); 
-//   $('#listOrdenarPor').val('v.fecha'); 
-//   $("#listOrdenarPor").selectpicker('render'); 
-//   $('#listAscDesc').val('DESC');    
-//   $("#listAscDesc").selectpicker('render');
-  
 window.location.href = "<?php echo base_url();?>/visitas/reportes";
 
 }); 
@@ -324,47 +308,53 @@ data: { fecha_desde: fecha_desde, fecha_hasta: fecha_hasta, visitante: visitante
 
 $(document).on('click', '#btnImprimirPDF', function() { 
 
- var arreglo_visitas = [];
- var fechas = [];
+var cntFilasTabla = $('#tabla_resultados').find('td').length;
 
-fecha_desde = 
-fecha_hasta = 
+if (cntFilasTabla > 0) {
+    
 
-var arrFechas = { fecha_desde, fecha_hasta};
-fechas.push(arrFechas);
- $('#tabla_resultados tbody tr').each(function() {
 
- fecha = $(this).find('td').eq(5).find('input').val();   
- visitante = $(this).find('td').eq(4).find('select').val();
- identidad = $(this).find('td').eq(7).find('select').val();
- empleado = $(this).find('td').eq(6).find('input').val();
- departamento = $(this).find('td').eq(1).find('input').val();
- motivo = $(this).find('td').eq(8).find('input').val();
- hora_entrada = $(this).find('td').eq(9).find('select').val();
- hora_salida = $(this).find('td').eq(9).find('select').val();
- status  = $(this).find('td').eq(9).find('select').val();
+fecha_desde = $('#txtFechaDesde').val();
+fecha_hasta = $('#txtFechaHasta').val();
 
-var fila = { fecha, visitante, identidad, empleado, departamento, motivo, hora_entrada, hora_salida, status };
-arreglo_visitas.push(fila);
+ var pdf = new jsPDF('l');
+ pdf.setProperties({
+ title: "Reporte General de Visitas"
 });
-$.ajax({
-   type: "POST",
-   url: "<?php echo base_url();?>/entradas/guardar_entrada_productos",
-   data: {productos: JSON.stringify(arreglo_producto)},
- success: function(data) {
-  
-  Swal.fire({
-  icon: 'success',
-  title: 'Abastecidos!',
-  text: 'Sus productos fueron abastecidos satisfactoriamente!',
-  showConfirmButton: false,
-  timer: 1500
-}).then(function () {
-window.location.href = "<?php echo base_url();?>/entradas/historial_entrada_productos";
+ pdf.addImage(logo_pdf_base64, 'JPEG', 10, 5, 40, 25); //addImage(image, format, x-coordinate, y-coordinate, width, height)
+ pdf.setFontSize(16);
+ pdf.setFont("helvetica", "bold");
+ pdf.text(100, 13, 'INSTITUTO DE ESTABILIZACIÓN DE PRECIOS');
+ pdf.setFontSize(14);
+ pdf.text(130, 19, 'DIRECCIÓN EJECUTIVA');
+ pdf.setFontSize(13);
+ pdf.text(110, 25, 'Reporte Visitas De '+fecha_desde+' A '+fecha_hasta);
+ pdf.setLineWidth(0.7);
+ pdf.setDrawColor(13, 90, 46);
+ pdf.line(10, 32, 287, 32); 
+ pdf.setLineWidth(0.7);
+ pdf.setDrawColor(218,206,67);
+ pdf.line(10, 34, 287, 34);
+ pdf.autoTable({ html:'#tabla_resultados', 
+    theme: 'striped', 
+    startY: 39,  
+    margin: { left: 10, right:10, },
+    headStyles: {
+      fillColor: [22, 91, 48],
+      fontSize: 10,
+      valign: 'middle', 
+    },
+    bodyStyles: {
+      fontSize: 9,
+      },
 });
+ //pdf.autoTable({ html:'#tabla_resultados'});
+ pdf.save('Reporte_Visitas');
+}
+else {
 
-    } 
-  }); 
+    Swal.fire("Error", "No existen datos para generar el PDF." , "error");
 
+}
 }); 
 </script>

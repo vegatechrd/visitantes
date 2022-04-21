@@ -36,7 +36,9 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">Tel&eacute;fono</label>
-                        <input class="form-control limpiar" id="txtTelefonoVisitante" name="txtTelefonoVisitante" type="text" placeholder="Teléfono del Visitante">
+                        <input type="text" class="form-control limpiar" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" 
+                        data-mask="" inputmode="text" id="txtTelefonoVisitante" name="txtTelefonoVisitante">
+                       
                     </div>
                     <div id="divEstadoVisitante">
                         <div class="form-group">
@@ -60,3 +62,25 @@
         </div>
     </div>
 </div>
+<script>
+
+$(document).ready(function(){
+ $('[data-mask]').inputmask(); 
+});    
+
+
+$('#listTipoDocumentoVisitante').change(function () {
+    var $selected = $(this).find('option:selected');
+    if ($selected.val() === 'Cedula') {
+        $("#postal_code").mask("999-9999999-9");
+    } else if ($selected.val() === 'Pasaporte') {
+        $("#postal_code").mask("a9a-9a9");
+    }
+    else {
+
+        $("#postal_code").mask("a9a-9a9");
+
+    }
+});
+
+</script>
