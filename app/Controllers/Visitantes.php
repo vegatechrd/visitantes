@@ -3,10 +3,6 @@
     use App\Controllers\BaseController;
     use App\Models\UsuariosGralModel;
     use App\Models\VisitasModel;
-    use App\Models\DepartamentosModel;
-    use App\Models\MotivosModel;
-    use App\Models\InstitucionesModel;
-    use App\Models\EmpleadosModel;
     use App\Models\VisitantesModel;
     
     class Visitantes extends BaseController{
@@ -68,7 +64,84 @@
             die();
         }
 
-   
+        public function update(){
+
+            if ($this->privilegios_CRUD['U'] == "S") {
+      
+                          $idVisitante = $this->request->getPost('id_visitante');
+                          $strTipoDocumento = ucfirst(strClean($this->request->getPost('tipo_documento')));
+                          $strDocumento = ucfirst(strClean($this->request->getPost('documento')));
+                          $strNombres = ucfirst(strClean($this->request->getPost('nombres')));
+                          $strApellidos = ucfirst(strClean($this->request->getPost('apellidos')));
+                          $strTelefono = ucfirst(strClean($this->request->getPost('telefono')));
+                          $status = $this->request->getPost('status');
+                          
+                $requestExistencia = $this->tabla->where('identidad', $strDocumento)->where('id_visitante !=', $idVisitante)->findAll();
+                              
+                              if (empty($requestExistencia)) {
+                                  
+                             $requestData = $this->tabla->update($idVisitante, ['tipo_identidad' => $strTipoDocumento,
+                                                                'identidad' => $strDocumento,  
+                                                                'nombres' => $strNombres,
+                                                                'apellidos' => $strApellidos,
+                                                                'telefono'=>$strTelefono,
+                                                                'status'=> $status]);
+                                      
+                                  
+                            if ($requestData > 0) {
+      
+                                                                     
+                                   $arrResponse = array("status" => true, "msg" => 'Datos actualizados correctamente.');
+                                      } 
+      
+      
+                                  } // if request existencia
+                                  
+                                  else{
+                                       $arrResponse = array("status" => false, "msg" => '¡Atención! el Visitante que desea ingresar ya está registrado.');   
+                                      }
+      
+                                  } // if privilegios crud
+                                  
+                              else{
+                               $arrResponse = array("status" => false, "msg" => '¡Atención! no tienes permisos para realizar esta opción');         
+                              }
+                     
+                  echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+                  die();
+              }
+
+              public function delete(){
+
+                if ($this->privilegios_CRUD['D'] == "S") {
+          
+                              $idVisitante = $this->request->getPost('id_visitante');
+                             
+                         
+                   
+                                 $requestData = $this->tabla->update($idVisitante, ['status' => 0]);
+                                          
+                                      
+                                if ($requestData > 0) {
+          
+                                                                         
+                                       $arrResponse = array("status" => true, "msg" => 'Visitante inactivado correctamente.');
+                                          } 
+          
+                                        
+                                        else{
+                                           $arrResponse = array("status" => false, "msg" => '¡Atención! el Visitante que desea ingresar ya está registrado.');   
+                                          }
+          
+                                      } // if privilegios crud
+                                      
+                                  else{
+                                   $arrResponse = array("status" => false, "msg" => '¡Atención! no tienes permisos para realizar esta opción');         
+                                  }
+                         
+                      echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+                      die();
+                  }
     
        public function consulta_visitantes(){
            
@@ -80,7 +153,7 @@
 
             if ($this->privilegios_CRUD['R'] == "S") {
 
-        $datos = $this->tabla->where('status', 1)->findAll();
+        $datos = $this->tabla->findAll();
 
 
                 $data = ['titulo' => "Consulta de Visitantes",

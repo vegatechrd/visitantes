@@ -348,7 +348,7 @@ fecha_hasta = $('#txtFechaHasta').val();
       fontSize: 9,
       },
 });
- //pdf.autoTable({ html:'#tabla_resultados'});
+
  pdf.save('Reporte_Visitas');
 }
 else {

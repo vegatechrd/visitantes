@@ -111,7 +111,7 @@
 
  public function update(){
 
-      if ($this->privilegios_CRUD['C'] == "S") {
+      if ($this->privilegios_CRUD['U'] == "S") {
                     
                     $intId = ucfirst(strClean($this->request->getPost('idInstitucion')));
                     $strNombre = ucfirst(strClean($this->request->getPost('nombre')));

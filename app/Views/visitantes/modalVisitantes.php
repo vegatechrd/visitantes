@@ -23,7 +23,8 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">N&uacute;mero De Documento<span class="text-danger">*</span></label>
-                        <input class="form-control limpiar" id="txtDocumentoVisitante" name="txtDocumentoVisitante" type="text" required placeholder="Número De Documento Del Visitante">
+                        <input class="form-control limpiar" id="txtDocumentoVisitante" name="txtDocumentoVisitante" type="text" 
+                        data-mask="" inputmode="text">
                     </div>
                     <div class="form-group">
                     <label for="txtNombresVisitante">Nombres<span class="text-danger"> *</span></label>
@@ -36,8 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">Tel&eacute;fono</label>
-                        <input type="text" class="form-control limpiar" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" 
-                        data-mask="" inputmode="text" id="txtTelefonoVisitante" name="txtTelefonoVisitante">
+                        <input type="text" class="form-control limpiar" id="txtTelefonoVisitante" name="txtTelefonoVisitante">
                        
                     </div>
                     <div id="divEstadoVisitante">
@@ -65,20 +65,18 @@
 <script>
 
 $(document).ready(function(){
- $('[data-mask]').inputmask(); 
+$('#txtTelefonoVisitante').inputmask("999-999-9999");
+$("#txtDocumentoVisitante").inputmask("999-9999999-9");
 });    
 
 
 $('#listTipoDocumentoVisitante').change(function () {
     var $selected = $(this).find('option:selected');
-    if ($selected.val() === 'Cedula') {
-        $("#postal_code").mask("999-9999999-9");
-    } else if ($selected.val() === 'Pasaporte') {
-        $("#postal_code").mask("a9a-9a9");
+    if ($selected.val() === 'Pasaporte') {
+    $("#txtDocumentoVisitante").inputmask("AA9999999");
     }
     else {
-
-        $("#postal_code").mask("a9a-9a9");
+    $("#txtDocumentoVisitante").inputmask("999-9999999-9");
 
     }
 });

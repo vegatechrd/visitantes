@@ -1,5 +1,6 @@
 <?php
     $sesionU = session();
+    include_once("modalVisitantes.php");
     ?>
 <div class="content-wrapper">
     <section class="content-header">
@@ -45,31 +46,48 @@
                     <table style="width: 100%;" class="display nowrap no-footer data-table table table-striped table-sm" cellspacing="0" id="tabla_visitas_presencia">
                         <thead>
                             <tr class="color-primario text-bold">
-                                <th style="width: 10%;" >Nombres</th>
-                                <th style="width: 22%;">Apellidos</th>
-                                <th style="width: 10%;">Tipo Identidad</th>
-                                <th style="width: 10%;">Identidad</th>
-                                <th style="width: 15%;">Opciones</th>
+                                <th>ID</th>
+                                <th>Nombres</th>
+                                <th>Apellidos</th>
+                                <th>Tipo Identidad</th>
+                                <th>Identidad</th>
+                                <th>Teléfono</th>
+                                <th>Status</th>
+                                <th style="width: 10%;">Opciones</th>
                                 
                             </tr>
                         </thead>
                          <tbody>
                               <?php foreach ($datos as $visitante) {  ?>
      <tr>
+                                            <td><?php echo $visitante['id_visitante'];?></td>
                                             <td><?php echo $visitante['nombres'];?></td>
                                             <td><?php echo $visitante['apellidos'];?></td>
                                             <td><?php echo $visitante['tipo_identidad'];?></td>
                                             <td><?php echo $visitante['identidad'];?></td>
+                                            <td><?php echo $visitante['telefono'];?></td>
+                                            <td>
+          <?php if($visitante['status']==1) { ?>
+            <span class="badge bg-primary">Activo</span>
+            <?php } else {
+          ?><span class="badge bg-danger">Inactivo</span>    
+          <?php 
+          };?>
+          </td>  
                                                                                          
                                               
                                                    <td>
          <?php  if ($privs['U'] <> "S") {
-                    
-                }else{  ?>
+               }else{  ?>
                       <a href="<?php echo base_url().'/visitantes/view/'.$visitante['id_visitante'];?>" title="Ver Detalles Visitante" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></a>
-         
+                      <button id="btnEditarVisitante" name="btnEditarVisitante" title="Editar Visitante" class="btn btn-sm btn-success"><i class="fas fa-pencil-alt"></i></button>   
+                        
        <?php } ?>
-      
+       <?php  if ($privs['D'] <> "S") {
+                    
+                }else{ ?>
+           <button id="btnEliminarVisitante" name="btnEliminarVisitante" title="Inactivar Visitante" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></button>
+ <?php } ?>
         </td>        
      </tr>
  <?php } ?>
@@ -90,60 +108,170 @@
 </div>
 <script>
  
-$(document).ready (function() {
+$(document).on('click', '#btnEliminarVisitante', function(){
 
-
-}); // End document Ready
-
-
-function MarcarSalida(id) {
-
-  $('#idVisita').val(id);
-  $('#modalSalida').modal('show');
-
-}
-
-
-$(document).on('click', '#btnEliminar', function(){
-
-var idLabel = $(this).parents('tr').find('td').eq(0).text();
+var idVisitante = $(this).parents('tr').find('td').eq(0).text();
 
 Swal.fire({
-  title: 'Eliminar?',
-  text: "Estás seguro de eliminar esta Etiqueta ?",
+  title: 'Inactivar?',
+  text: "Estás seguro de Inactivar este Visitante ?",
   icon: 'error',
   showCancelButton: true,
   confirmButtonColor: '#d33',
   cancelButtonColor: '#3085d6',
-  confirmButtonText: 'Si, Eliminar.',
+  confirmButtonText: 'Si, Inactivar.',
   cancelButtonText: 'Cancelar'
 }).then((result) => {
 if (result.isConfirmed) {
-$(this).parents('tr').remove();
-Swal.fire({
-  icon: 'success',
-  title: 'Eliminado!',
-  text: 'La Etiqueta fue eliminada correctamente!',
-  showConfirmButton: false,
-  timer: 2000
-})
+
 $.ajax({
          type: "POST", 
-         url: "<?php echo base_url();?>/labels/delete",
-         data: {idLabel: idLabel},
-         success:function(data) {
+         url: "<?php echo base_url();?>/visitantes/delete",
+         data: {id_visitante: idVisitante},
+                 success: function(data) {
+      let datos = JSON.parse(data);
+      if (datos.status === true) {
+   Swal.fire({
+   icon: 'success',
+   title: 'Inactivado!',
+   text: datos.msg,
+   showConfirmButton: false,
+  timer: 2000
+}).then(function () {
+window.location.href = "<?php echo base_url();?>/visitantes/consulta_visitantes";
+});
+}
 
-          }
+else {
+
+Swal.fire({
+   icon: 'error',
+   title: 'Error!',
+   text: datos.msg,
+   showConfirmButton: true});
+
+
+        }
+          
+        } //Success Function Data
         
       });
 
 
-}
 
-})
+
+} // if result.isconfirmed
+
+}) //then result
+
+
+
+
         
 }); // End btnEliminar
 
 
+$(document).on('click', '#btnEditarVisitante', function(){
+
+//$status = $(this).parents('tr').find('td').eq(6).text(); 
+
+$('#idVisitante').val($(this).parents('tr').find('td').eq(0).text());
+$('#listTipoDocumentoVisitante').selectpicker('val', $(this).parents('tr').find('td').eq(3).text()); 
+
+var $selected = $('#listTipoDocumentoVisitante').find('option:selected');
+    if ($selected.val() === 'Pasaporte') {
+    $("#txtDocumentoVisitante").inputmask("AA9999999");
+    }
+    else {
+    $("#txtDocumentoVisitante").inputmask("999-9999999-9");
+
+    }
+
+$('#txtDocumentoVisitante').val($(this).parents('tr').find('td').eq(4).text());
+$('#txtNombresVisitante').val($(this).parents('tr').find('td').eq(1).text());
+$('#txtApellidosVisitante').val($(this).parents('tr').find('td').eq(2).text());
+$('#txtTelefonoVisitante').val($(this).parents('tr').find('td').eq(5).text());
+
+
+$('#listStatus').selectpicker('text', $(this).parents('tr').find('td').eq(6).text()); 
+document.querySelector('#btnTextVisitante').innerHTML = "Actualizar";
+document.querySelector('#tituloModalVisitante').innerHTML = "Editar Visitante";
+$('#modalVisitantes').modal('show');
+
+});
+
+function GuardarVisitante() {
+
+    var idVisitante = document.querySelector('#idVisitante').value;
+    var strTipoDocumento = document.querySelector('#listTipoDocumentoVisitante').value;   
+    var strDocumento = document.querySelector('#txtDocumentoVisitante').value; 
+    var strNombres = document.querySelector('#txtNombresVisitante').value;
+    var strApellidos = document.querySelector('#txtApellidosVisitante').value;
+    var strTelefono = document.querySelector('#txtTelefonoVisitante').value; 
+    var status = document.querySelector('#listStatus').value;   
+              
+     if (strNombres == '') {
+         
+         Swal.fire({
+             icon: 'error',
+             title: 'Error',
+             text: 'El Nombre del Visitante es obligatorio.',
+             confirmButtonText: 'Ok',
+             confirmButtonColor: '#aea322'
+         });
+         
+         return false;
+     }
+
+      if (strApellidos == '') {
+         
+         Swal.fire({
+             icon: 'error',
+             title: 'Error',
+             text: 'El Apellido del Visitante es obligatorio.',
+             confirmButtonText: 'Ok',
+             confirmButtonColor: '#aea322'
+         });
+         
+         return false;
+     }
+
+$.ajax({
+type: "POST",
+url: "<?php echo base_url();?>/visitantes/update",
+data: { id_visitante: idVisitante, tipo_documento: strTipoDocumento, documento: strDocumento, nombres : strNombres, apellidos: strApellidos, 
+    telefono: strTelefono, status: status },
+     success: function(data) {
+   let datos = JSON.parse(data);
+   if (datos.status === true) {
+Swal.fire({
+icon: 'success',
+title: 'Actualizado!',
+text: datos.msg,
+showConfirmButton: true,
+}).then(function () {
+   
+$('#modalVisitantes').modal('hide');
+window.location.href = "<?php echo base_url();?>/visitantes/consulta_visitantes";
+});
+}
+
+else {
+
+Swal.fire({
+icon: 'error',
+title: 'Error!',
+text: datos.msg,
+showConfirmButton: true});
+
+
+     }
+       
+     } //Success Function Data
+
+   }); //Ajax
+
+
+}
 
 </script>
