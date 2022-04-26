@@ -173,30 +173,44 @@ Swal.fire({
 
 $(document).on('click', '#btnEditarVisitante', function(){
 
-//$status = $(this).parents('tr').find('td').eq(6).text(); 
+var id = $(this).parents('tr').find('td').eq(0).text();
 
-$('#idVisitante').val($(this).parents('tr').find('td').eq(0).text());
-$('#listTipoDocumentoVisitante').selectpicker('val', $(this).parents('tr').find('td').eq(3).text()); 
+$.ajax({
+type: "POST",
+url: "<?php echo base_url();?>/visitantes/edit",
+data: { id: id },
+        success: function(data) {
+            
+      let arrDatos = JSON.parse(data);
+     
+      if (arrDatos.status === true) {
 
-var $selected = $('#listTipoDocumentoVisitante').find('option:selected');
-    if ($selected.val() === 'Pasaporte') {
-    $("#txtDocumentoVisitante").inputmask("AA9999999");
-    }
-    else {
-    $("#txtDocumentoVisitante").inputmask("999-9999999-9");
+         $('.limpiar').val('');   
+         document.querySelector('#idVisitante').value = arrDatos.data.id_visitante;
+         $('#listTipoDocumentoVisitante').selectpicker('val', arrDatos.data.tipo_identidad); 
+         var selected = $('#listTipoDocumentoVisitante').find('option:selected');
+            if (selected.val() === 'Pasaporte') {
+            $("#txtDocumentoVisitante").inputmask("AA9999999");
+            }
+            else {
+            $("#txtDocumentoVisitante").inputmask("999-9999999-9");
+            }
+         document.querySelector('#txtDocumentoVisitante').value = arrDatos.data.identidad;   
+         document.querySelector('#txtNombresVisitante').value = arrDatos.data.nombres;
+         document.querySelector('#txtApellidosVisitante').value = arrDatos.data.apellidos;
+         document.querySelector('#txtTelefonoVisitante').value = arrDatos.data.telefono;
+         $('#listStatus').selectpicker('val', arrDatos.data.status);   
+        
+            document.querySelector('#btnTextVisitante').innerHTML = "Actualizar";
+            document.querySelector('#tituloModalVisitante').innerHTML = "Editar Visitante";
+            $('#modalVisitantes').modal('show');
 
-    }
+ }
+          
+        } //Success Function Data
 
-$('#txtDocumentoVisitante').val($(this).parents('tr').find('td').eq(4).text());
-$('#txtNombresVisitante').val($(this).parents('tr').find('td').eq(1).text());
-$('#txtApellidosVisitante').val($(this).parents('tr').find('td').eq(2).text());
-$('#txtTelefonoVisitante').val($(this).parents('tr').find('td').eq(5).text());
+      }); //Ajax   
 
-
-$('#listStatus').selectpicker('text', $(this).parents('tr').find('td').eq(6).text()); 
-document.querySelector('#btnTextVisitante').innerHTML = "Actualizar";
-document.querySelector('#tituloModalVisitante').innerHTML = "Editar Visitante";
-$('#modalVisitantes').modal('show');
 
 });
 

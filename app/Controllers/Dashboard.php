@@ -30,7 +30,7 @@ class Dashboard extends BaseController
 	$visitas_activas = $this->tablaVisitas->selectCount('id_visita')->where('status', 1)->first();
 	$visitas_concluidas = $this->tablaVisitas->selectCount('id_visita')->where('status', 3)->first();
 	$visitantes = $this->tablaVisitantes->selectCount('id_visitante')->where('status', 1)->first();
-	$personal_visitado = $this->tablaEmpleados->selectCount('codigo')->where('status', 1)->first();
+	$personal_visitado = $this->tablaEmpleados->selectCount('codigo')->first();
 	
 	$data = ['titulo' => 'Dashboard', 'privs' => $this->privilegios_CRUD, 'visitas_concluidas' => $visitas_concluidas,'visitas_activas' => $visitas_activas, 
 	'visitantes' => $visitantes, 'personal_visitado' => $personal_visitado];

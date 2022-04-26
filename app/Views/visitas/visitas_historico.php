@@ -39,7 +39,7 @@
                                 <option value="100" class="text-gray">100</option>
                             </select>
                         </div>
-                        <a href="reporte_general" target="_blank" class="btn color-secundario">
+                        <a href="<?php echo base_url().'/visitas/reportes'?>" class="btn color-secundario">
                             <i class="fas fa-print"></i> <span class="hidden-letters"> Reporte</span>
                             </a>
                     </div>

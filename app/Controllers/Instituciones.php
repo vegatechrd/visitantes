@@ -3,9 +3,7 @@
     use App\Controllers\BaseController;
     use App\Models\UsuariosGralModel;
     use App\Models\InstitucionesModel;
-    use App\Models\VisitasModel;
-
-    
+      
     class Instituciones extends BaseController{
 
         public function __construct(){
@@ -28,7 +26,7 @@
 
             if ($this->privilegios_CRUD['R'] == "S") {
 
-         $datos = $this->tabla->where('status_institucion !=', 2)->orderBy('nombre_institucion', 'ASC')->findAll();       
+         $datos = $this->tabla->orderBy('nombre_institucion', 'ASC')->findAll();       
                 
                 $data = ['titulo' => $this->titulo, 
                          'privs' => $this->privilegios_CRUD,
@@ -160,7 +158,7 @@
          $id = strClean(intval($this->request->getPost('id')));             
                                         
                          $requestDelete = $this->tabla->update($id,
-                            ['status_institucion'=>intval(2)]);
+                            ['status_institucion'=>intval(0)]);
                             
                             $arrResponse = array('status' => true, 'msg' => 'Se ha eliminado la institución.');
                         }else{

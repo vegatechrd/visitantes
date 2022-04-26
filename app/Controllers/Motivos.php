@@ -28,7 +28,7 @@
 
             if ($this->privilegios_CRUD['R'] == "S") {
 
-     $datos = $this->tabla->where('status !=',2)->orderBy('descripcion', 'ASC')->findAll();           
+     $datos = $this->tabla->orderBy('descripcion', 'ASC')->findAll();           
                 
                 $data = ['titulo' => $this->titulo, 
                          'privs' => $this->privilegios_CRUD,
@@ -111,7 +111,7 @@
 
  public function update(){
 
-      if ($this->privilegios_CRUD['C'] == "S") {
+      if ($this->privilegios_CRUD['U'] == "S") {
                     
                     $intId = ucfirst(strClean($this->request->getPost('id')));
                     $strDescripcion = ucfirst(strClean($this->request->getPost('descripcion')));
@@ -159,7 +159,7 @@
          $id = strClean(intval($this->request->getPost('id')));             
                                         
                          $requestDelete = $this->tabla->update($id,
-                            ['status'=>intval(2)]);
+                            ['status'=>intval(0)]);
                             
                             $arrResponse = array('status' => true, 'msg' => 'Se ha eliminado el Motivo.');
                         }else{

@@ -100,7 +100,7 @@
                 die();
             }
 
-            if ($this->privilegios_CRUD['R'] == "S") {
+            if ($this->privilegios_CRUD['U'] == "S") {
                 
      $datos = $this->tabla->GetAllVisitas($id);
 
@@ -368,8 +368,7 @@ $verificar_empleado = $this->tablaEmpleadosVisitados->VerificarEmpleadoVisitado(
                                                        'departamento'=> $departamento_empleado,
                                                        'email'=> $email_empleado,
                                                        'extension'=> $extension_empleado,     
-                                                       'puesto'=> $puesto_empleado,                                           
-                                                       'status'=> 1]);
+                                                       'puesto'=> $puesto_empleado]);
                     } // if !verificarEmpleado 
 
 $requestData = $this->tabla->update($id_visita,['visitante_id'=> $id_visitante,
@@ -426,14 +425,12 @@ die();
 
   public function delete(){
 
-        
-
                 if ($this->privilegios_CRUD['D'] == "S") {
 
          $id = strClean(intval($this->request->getPost('id')));             
                                         
                          $requestDelete = $this->tabla->update($id,
-                            ['status'=>intval(2)]);
+                            ['status'=>intval(0)]);
                             
                             $arrResponse = array('status' => true, 'msg' => 'Se ha eliminado la visita.');
                         }else{
@@ -520,281 +517,14 @@ die();
   $this->response->setHeader('Content-Type', 'application/pdf');
   $pdf->Output('Reporte.pdf', 'I'); 
 
-
-
-
    } 
 
-public function reporte_general() {
+   public function reportes(){
 
-$datos = $this->tabla->GetAllHistory();
+        $instituciones = $this->tablaInstituciones->findAll();
+        $motivos = $this->tablaMotivos->findAll();
+        $visitantes = $this->tablaVisitantes->findAll();
 
-$pdf = new \PDF_MC_Table('L', 'mm', 'letter');
-$pdf->AddPage();
-$pdf->SetMargins(10,10,0);
-$pdf->SetAutoPageBreak(false,0);
-
-$pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
-$pdf->SetXY(110,15);
-$pdf->SetFont('Arial','B',13);
-
-$pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-$pdf->SetXY(133,21);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-$pdf->SetXY(112,27);
-$pdf->SetFont('Arial','B',13);
-$pdf->Cell(90,5,utf8_decode('REPORTE GENERAL VISITAS INSTITUCIÓN'), 0, 1, 'L');
-
-
-$pdf->SetLineWidth(0.7);
-$pdf->SetDrawColor(13,90,46);
-$pdf->Line(10,41,268,41);
-$pdf->SetDrawColor(174, 163, 34);
-$pdf->SetLineWidth(0.7);
-$pdf->Line(10,43,268,43);
-
-$pdf->Ln(18);
-$pdf->SetDrawColor(0,0,0);
-$pdf->SetTextColor(255,255,255);
-$pdf->SetFont('Arial','B',9);
-$pdf->SetLineWidth(0.3);
-$pdf->SetFillColor(13,90,46);
-$pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
-$pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
-$pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
-$pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
-$pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
-$pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
-$pdf->SetFont('Arial','',8);
-$pdf->Ln();
-$pdf->SetWidths(array(20,35,20,62,78,23,20));
-$pdf->SetFont('Arial','',8);
-$pdf->SetTextColor(0,0,0);
-if ($datos) {
-foreach ($datos as $dato) {
-$pdf->Row(array(
-date("d/m/Y", strtotime($dato['fecha'])),    
-utf8_decode($dato['nombres'].' '.$dato['apellidos']),
-utf8_decode($dato['identidad']),
-utf8_decode($dato['empleado']),
-utf8_decode($dato['departamento']),
-date('h:i A', strtotime($dato['hora_entrada'])),
-date('h:i A', strtotime($dato['hora_salida'])),
-));
-}    
-}
-else {
-$pdf->Cell(260,6,"No se encontraron Datos",1,0,'C');
-}
-$this->response->setHeader('Content-Type', 'application/pdf');
-$pdf->Output('Reporte_General.pdf', 'I');
-
-
-}
-
-
-public function printVisita($idVisita) {
-
-    $datos = $this->tabla->GetAllHistory($idVisita);
-
-   
-    
-    $pdf = new \FPDF('P', 'mm', 'letter');
-    $pdf->AddPage();
-    $pdf->SetMargins(10,10,0);
-    $pdf->SetAutoPageBreak(false,0);
-    
-    $pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,'JPG');
-    $pdf->SetXY(80,15);
-    $pdf->SetFont('Arial','B',13);
-    
-    $pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-    $pdf->SetXY(106,21);
-    $pdf->SetFont('Arial','B',13);
-    $pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-    $pdf->SetXY(105,27);
-    $pdf->SetFont('Arial','',13);
-    $pdf->Cell(90,5,utf8_decode('REPORTE VISITA NO:'.$datos['id_visita']), 0, 1, 'L');
-    
-    $pdf->SetLineWidth(0.7);
-    $pdf->SetDrawColor(13,90,46);
-    $pdf->Line(10,41,203,41);
-    $pdf->SetDrawColor(174, 163, 34);
-    $pdf->SetLineWidth(0.7);
-    $pdf->Line(10,43,203,43);
-    
-    $pdf->SetXY(9,50);
-    $pdf->SetFont('Arial','B',12);
-    $pdf->Cell(90,5,utf8_decode('Datos Visitante'), 0, 1, 'L');
-
-    $pdf->SetXY(110,50);
-    $pdf->SetFont('Arial','B',12);
-    $pdf->Cell(90,5,utf8_decode('Datos Visita'), 0, 1, 'L');
-    
-    $pdf->SetXY(10,60);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Documento:'), 0, 1, 'L');
-    $pdf->SetXY(45,60);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, $datos['identidad'], 0, 1, 'L');
-    
-    $pdf->SetXY(10,65);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Tipo Documento:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,65);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['tipo_identidad']), 0, 1, 'L');
-    
-    $pdf->SetXY(110,60);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Fecha:'), 0, 1, 'L');
-    $pdf->SetXY(145,60);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, date('d-m-Y', strtotime($datos['fecha'])), 0, 1, 'L');
-    
-    $pdf->SetXY(110,65);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Hora Entrada:'), 0, 1, 'L');
-    
-    $pdf->SetXY(145,65);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, date("h:i:s A", strtotime($datos['hora_entrada'])), 0, 1, 'L');
-    
-    
-    $pdf->SetXY(10,70);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Nombre:'), 0, 1, 'L');
-    $pdf->SetXY(45,70);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['nombres'].' '.$datos['apellidos']), 0, 1, 'L');
-    
-    $pdf->SetXY(10,75);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Institución:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,75);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['nombre_institucion']), 0, 1, 'L');
-    
-    $pdf->SetXY(110,70);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, 'Hora Salida:' , 0, 1, 'L');
-    $pdf->SetXY(145,70);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, date("h:i:s A", strtotime($datos['hora_salida'])), 0, 1, 'L');
-    
-    $pdf->SetXY(110,75);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Motivo Visita:'), 0, 1, 'L');
-    
-    $pdf->SetXY(145,75);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['motivo_visita']), 0, 1, 'L');
-    
-    $pdf->SetXY(10,80);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Pertenencias:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,80);
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(40,5, $datos['equipos'], 0, 1, 'L');
-
-    $pdf->SetXY(10,85);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Foto:'), 0, 1, 'L');
-    $pdf->SetXY(45,85);
-    
-
-    $foto = $datos['foto'];
-    if ($foto) {
-     $pdf->Image(base_url().'/'.$datos['foto'],45,85,30,30,'JPG');
-    }
-    else {
-
-     $pdf->Image(base_url().'/dist/img/silueta.png',45,85,30,30,'PNG');    
-    }
-   
-
-    $pdf->SetXY(110,80);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Status Visita:'), 0, 1, 'L');
-    
-    $pdf->SetXY(145,80);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, 'CONCLUIDA', 0, 1, 'L');
-
-    $pdf->SetXY(110,85);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Total Visitantes:'), 0, 1, 'L');
-    
-    $pdf->SetXY(145,85);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, $datos['total_visitantes'], 0, 1, 'L');
-
-    $pdf->SetXY(110,90);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5,utf8_decode('Número Gafete:'), 0, 1, 'L');
-    
-    $pdf->SetXY(145,90);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, $datos['no_gafete'], 0, 1, 'L');
-    
-    $pdf->SetXY(10,125);
-    $pdf->SetFont('Arial','B',12);
-    $pdf->Cell(90,5,utf8_decode('Datos Persona Visitada'), 0, 1, 'L');
-  
-    $pdf->SetXY(10,135);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(30,5,utf8_decode('Persona Visitada:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,135);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, $datos['empleado'], 0, 1, 'L');
-
-    $pdf->SetXY(10,140);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(30,5,utf8_decode('Departamento:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,140);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['departamento']), 0, 1, 'L');
-
-    
-    $pdf->SetXY(10,145);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(30,5,utf8_decode('Puesto:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,145);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['puesto']), 0, 1, 'L');
-
-    
-    $pdf->SetXY(10,150);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(30,5,utf8_decode('Extensión:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,150);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, $datos['extension'], 0, 1, 'L');
-
-    
-    $pdf->SetXY(10,155);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(30,5,utf8_decode('Email:'), 0, 1, 'L');
-    
-    $pdf->SetXY(45,155);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(40,5, utf8_decode($datos['email']), 0, 1, 'L');
-    
-    $this->response->setHeader('Content-Type', 'application/pdf');
-    $pdf->Output('Reporte_Visita.pdf', 'I');
-    
-    }
-
-    public function reportes(){
     
         $this->tabla->select('vt.nombres, vt.apellidos, v.no_gafete, ev.nombre as empleado, date_format(v.fecha, "%d-%m-%Y") as fecha, 
             date_format(v.hora_entrada,"%h:%i %p") as hora_entrada, v.status, v.equipos, v.total_visitantes, vt.identidad, vt.tipo_identidad, 
@@ -812,7 +542,7 @@ public function printVisita($idVisita) {
         $datos = $this->tabla->findAll();    
            
 
-        $data = ['titulo' => 'Reportes',  'instituciones' => $this->instituciones, 'motivos' => $this->motivos,'visitantes' => $this->visitantes,
+        $data = ['titulo' => 'Reportes',  'instituciones' => $instituciones, 'motivos' => $motivos,'visitantes' => $visitantes,
                 'departamentos_visitados' => $this->departamentos_visitados, 'datos' => $datos];
             
             echo  view ('templates/header');
@@ -862,69 +592,7 @@ public function printVisita($idVisita) {
             die();     
     }
 
-    public function printReportes() {
-
-        $fechas = json_decode($_POST['fechas'], true);
-        $visitas = json_decode($_POST['visitas'], true);
-        
-        $pdf = new \PDF_MC_Table('L', 'mm', 'letter');
-        $pdf->AddPage();
-        $pdf->SetMargins(10,10,0);
-        $pdf->SetAutoPageBreak(false,0);
-        
-        $pdf->Image(base_url().'/dist/img/logo.jpg',10,8,45,0,'JPG');
-        $pdf->SetXY(110,15);
-        $pdf->SetFont('Arial','B',13);
-        
-        $pdf->Cell(190,5,utf8_decode('INSTITUTO DE ESTABILIZACIÓN DE PRECIOS'), 0, 1, 'L');
-        $pdf->SetXY(133,21);
-        $pdf->SetFont('Arial','B',13);
-        $pdf->Cell(190,5,utf8_decode('DIRECCIÓN EJECUTIVA'), 0, 1, 'L');
-        $pdf->SetXY(112,27);
-        $pdf->SetFont('Arial','B',13);
-        $pdf->Cell(90,5,utf8_decode('REPORTE VISITAS'.$fechas[0]['fecha_desde']), 0, 1, 'L');
-                
-        $pdf->SetLineWidth(0.7);
-        $pdf->SetDrawColor(13,90,46);
-        $pdf->Line(10,41,268,41);
-        $pdf->SetDrawColor(174, 163, 34);
-        $pdf->SetLineWidth(0.7);
-        $pdf->Line(10,43,268,43);
-        
-        $pdf->Ln(18);
-        $pdf->SetDrawColor(0,0,0);
-        $pdf->SetTextColor(255,255,255);
-        $pdf->SetFont('Arial','B',9);
-        $pdf->SetLineWidth(0.3);
-        $pdf->SetFillColor(13,90,46);
-        $pdf->Cell(20,6,utf8_decode('Fecha'),1,0,'L',1);
-        $pdf->Cell(35,6,utf8_decode('Visitante'),1,0,'L',1);
-        $pdf->Cell(20,6,utf8_decode('Identidad'),1,0,'L',1);
-        $pdf->Cell(62,6,utf8_decode('Persona Visitada'),1,0,'L',1);
-        $pdf->Cell(78,6,utf8_decode('Departamento'),1,0,'L',1);
-        $pdf->Cell(23,6,utf8_decode('Hora Entrada'),1,0,'L',1);
-        $pdf->Cell(20,6,utf8_decode('Hora Salida'),1,0,'L',1);
-        $pdf->SetFont('Arial','',8);
-        $pdf->Ln();
-        $pdf->SetWidths(array(20,35,20,62,78,23,20));
-        $pdf->SetFont('Arial','',8);
-        $pdf->SetTextColor(0,0,0);
-        foreach ($visitas as $dato) {
-        $pdf->Row(array(
-        date("d/m/Y", strtotime($dato['fecha'])),    
-        utf8_decode($dato['nombres'].' '.$dato['apellidos']),
-        utf8_decode($dato['identidad']),
-        utf8_decode($dato['empleado']),
-        utf8_decode($dato['departamento']),
-        date('h:i A', strtotime($dato['hora_entrada'])),
-        date('h:i A', strtotime($dato['hora_salida'])),
-        ));
-        }    
-        $this->response->setHeader('Content-Type', 'application/pdf');
-        $pdf->Output('Reporte_General.pdf', 'I');
-        
-        
-        }
+   
 
 
     } //End Function Construct

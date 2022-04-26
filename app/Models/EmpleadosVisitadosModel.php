@@ -11,7 +11,7 @@
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
 
-        protected $allowedFields = ['codigo','nombre', 'departamento','extension', 'puesto', 'email', 'status'];
+        protected $allowedFields = ['codigo','nombre', 'departamento','extension', 'puesto', 'email'];
 
         protected $useTimestamps = true;
         protected $createdField  = 'created_at';

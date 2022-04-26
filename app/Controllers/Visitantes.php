@@ -64,6 +64,29 @@
             die();
         }
 
+        public function edit(){
+
+            $id = $this->request->getPost('id');
+            if ($id > 0) {
+
+                if ($this->privilegios_CRUD['U'] == "S") {
+                    
+                    $arrData = $this->tabla->where('id_visitante',$id)->first();
+                    if (empty($arrData)) {
+                        
+                        $arrResponse = array('status' => false, 'msg' => 'Datos no encontrados');
+                    }else{
+                        $arrResponse = array('status' => true, 'data' => $arrData);
+                    }
+                }else{
+                    $arrResponse = array("status" => false, "msg" => '¡Atención! no tienes permisos para realizar esta opción');
+                    return redirect()->to(base_url().'/Dashboard');
+                }
+                echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+            }
+            die();
+        }
+
         public function update(){
 
             if ($this->privilegios_CRUD['U'] == "S") {
