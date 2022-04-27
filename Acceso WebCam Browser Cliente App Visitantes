@@ -1,0 +1,13 @@
+Add your IP address to Chrome's Insecure origins treated as secure setting.
+
+1. Go to chrome://flags/#unsafely-treat-insecure-origin-as-secure 
+
+2. Find the Insecure origins treated as secure setting.
+
+3. Enable it.
+
+4. Enter in http://cntral.me:3000.
+
+5. Relaunch Chrome.
+
+Voila!

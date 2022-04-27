@@ -31,6 +31,7 @@
           
         }
 
+      
            
         public function index(){
            
@@ -256,7 +257,38 @@ if ($requestData > 0) {
 
     } //if empty($foto)
 
+    if ($email_empleado) {
+        // En esta parte enviamos el mail al empleado confirmando la visita.
 
+        $datos_visitante = $this->tablaVisitantes->where('id_visitante', $id_visitante)->first();
+        $motivo_visita = $this->tablaMotivos->where('id_motivo', $motivo_id)->first();
+       
+       
+        //Cuerpo o contenido del mensaje. 
+      
+        $cuerpo = "Saludos, ".$nombre_empleado.", hay una persona en la recepci&oacute;n que desea ponerse en contacto con usted.<br><br>\n".
+        "<b>DATOS VISITA</b><br><br>\n".
+        "Nombre: ".$datos_visitante['nombres']." ".$datos_visitante['apellidos']."<br>\n".
+        "Tel&eacute;fono: ".$datos_visitante['telefono']."<br>\n".
+        "Fecha: ".$varFecha."<br>\n".
+        "Hora: ".$varHora."<br>\n".
+        "Motivo Visita: ".$motivo_visita['descripcion']."<br><br>\n".
+        "Puede ponerse en contacto con nosotros en Recepci&oacute;n en la extensi&oacute;n <b>2401.</b><br>\n".
+        "";
+    
+        //Configuración del envio del mail
+
+     $email = \Config\Services::email();
+     $email->setFrom('visitantesinespre@gmail.com');
+     $email->setTo($email_empleado);
+     //$email->setCC('another@another-example.com');
+     //$email->setBCC('them@their-example.com');
+     $email->setSubject('Aviso Visita Recepción Inespre');
+     $email->setMessage($cuerpo);
+     $email->send();
+    }
+
+     
 $arrResponse = array("status" => true, "id_visita" => $id_visita, "msg" => 'Datos guardados correctamente!');    
 
 } // End if RequestData
