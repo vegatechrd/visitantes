@@ -40,28 +40,28 @@ class Email extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $mailPath = '/usr/sbin/sendmail';
+	//public $mailPath = '/usr/sbin/sendmail';
 
 	/**
 	 * SMTP Server Address
 	 *
 	 * @var string
 	 */
-	public $SMTPHost = 'smtp.googlemail.com';
+	public $SMTPHost = 'mail.inespre.gob.do';
 
 	/**
 	 * SMTP Username
 	 *
 	 * @var string
 	 */
-	public $SMTPUser = 'visitantesinespre@gmail.com';
+	public $SMTPUser = 'eencarnacion@inespre.gob.do';
 
 	/**
 	 * SMTP Password
 	 *
 	 * @var string
 	 */
-	public $SMTPPass = 'inespre*2022';
+	public $SMTPPass = 'Samana@2022';
 
 	/**
 	 * SMTP Port

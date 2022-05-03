@@ -61,8 +61,7 @@
            }
         }
 
-     
-
+       
         public function create(){
             
             if (empty($this->session->idUsuario)) {
@@ -279,7 +278,7 @@ if ($requestData > 0) {
         //Configuración del envio del mail
 
      $email = \Config\Services::email();
-     $email->setFrom('visitantesinespre@gmail.com');
+     $email->setFrom('eencarnacion@inespre.gob.do');
      $email->setTo($email_empleado);
      //$email->setCC('another@another-example.com');
      //$email->setBCC('them@their-example.com');
