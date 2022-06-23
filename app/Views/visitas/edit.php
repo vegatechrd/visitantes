@@ -61,7 +61,7 @@
 <textarea id="infoVisitante" name="infoVisitante" class="form-control bg-light" rows="4" cols="4" disabled></textarea> 
 </div>
 <div class="form-row">
-   <div class="form-group col-xl-11 col-md-10">
+<div class="form-group col-xl-10 col-md-10 col-10">
      <label for="listMotivos">Motivo Visita<span class="text-danger"> *</span></label>
         <select class="form-control selectpicker" id="listMotivos" name="listMotivos" data-style="color-select" data-live-search="true" required>
  <option value="">Seleccione el Motivo de la Visita</option>
@@ -78,7 +78,7 @@
    
   </div>
   <div class="form-row">
-   <div class="form-group col-xl-11 col-md-10">
+  <div class="form-group col-xl-10 col-md-10 col-10">
      <label for="listInstitucion">Empresa / Instituci&oacute;n</label>
         <select class="form-control selectpicker" id="listInstitucion" name="listInstitucion" data-style="color-select" data-live-search="true">
  <option value="">Seleccione Empresa o Instituci&oacute;n</option>
@@ -120,20 +120,15 @@
 
 <div class="col-xl-4 col-md-6 col-sm-6">
 
-  <div class="form-row">
-    <div class="form-group col-xl-11 col-md-10">
+  <div class="form-group">
+
      <label for="listEmpleados" class="form-label">A Quien Visita<span class="text-danger"> *</span></label>
    <select class="form-control" id="listEmpleados" name="listEmpleados" data-style="color-select" data-live-search="true" required>
     <option value="">Seleccione Persona Va a Visitar</option>
    
 </select>
     </div>
-   
-   <div class="form-group col-md-2 col-xl-1 align-self-end">
-  <button type="button" id="btnVerInfoEmpleado" name="btnVerInfoEmpleado" class="btn btn-secondary" title="Ver Más Información A Quien Visita"><i class="fas fa-eye"></i></button>
-</div>
-   
-  </div>
+
 
   <div class="form-group">
 <label for="SelectTipoDocumento">Datos A Quien Visita</label>

@@ -40,7 +40,8 @@
     }
     },
      "paging": true,
-     "ordering": false
+     "ordering": false,
+	 "responsive": true
 	 
 	});
 

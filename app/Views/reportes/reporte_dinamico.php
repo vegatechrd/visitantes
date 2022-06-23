@@ -26,7 +26,7 @@
               </div>
               <div class="card-body">
                   <div class="row">
-                        <div class="form-group col-sm-2">
+                        <div class="form-group col-sm-2 col-xl-2">
                             <label>Desde</label>
                             <div class="input-group date" data-target-input="nearest">
                             <input type="text" class="form-control form-control-sm" id="txtFechaDesde" name="txtFechaDesde" value="<?php echo date("01/m/Y");?>">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                
-                        <div class="form-group col-sm-2">
+                        <div class="form-group col-sm-2 col-xl-2">
                             <label>Hasta</label>
                             <div class="input-group date" data-target-input="nearest">
                             <input type="text" class="form-control form-control-sm" id="txtFechaHasta" name="txtFechaHasta" value="<?php echo date("d/m/Y");?>">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group col-sm-3">
+                        <div class="form-group col-sm-3 col-xl-3">
                             <label>Visitante</label>
                             <select class="form-control form-control-sm selectpicker" id="listVisitante" name="listVisitante" data-style="color-select" data-live-search="true">
                             <option value="TODOS">TODOS</option>
@@ -57,7 +57,7 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-sm-3">
+                        <div class="form-group col-sm-3 col-xl-2">
                             <label>Departamento</label>
                             <select class="form-control form-control-sm selectpicker" id="listDepartamento" name="listDepartamento" data-style="color-select" data-live-search="true">
                             <option value="TODOS">TODOS</option>
@@ -66,11 +66,11 @@
                             <?php endforeach ?>
                             </select>
                         </div>
-                        <div class="form-group col-sm-1 align-self-end">
+                        <div class="form-group col-sm-1 col-xl-2 align-self-end">
                             <button class="btn btn-outline-success btn-block btn-sm" id="btnFiltrarReporte" name="btnFiltrarReporte">
                             <i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Buscar</button>
                         </div>
-                        <div class="form-group col-sm-1 align-self-end">
+                        <div class="form-group col-sm-1 col-xl-1 align-self-end">
                             <button class="btn btn-outline-primary btn-sm" id="btnLimpiarCampos" name="btnLimpiarCampos"><i class="fas fa-sync"></i></button>
                         </div>        
                     </div> <!-- row -->
@@ -116,7 +116,7 @@
 
            <br>
                   <div class="row" id="div_botones">
-                  <div class="form-group col-sm-1 align-self-end">
+                  <div class="form-group col-sm-1 col-xl-2 align-self-end">
                             <button class="btn btn-outline-success btn-block btn-sm" id="btnImprimirPDF" name="btnImprimirPDF">
                             <i class="fa-solid fa-file-pdf"></i> &nbsp;&nbsp;Generar PDF</button>
                         </div>

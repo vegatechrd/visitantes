@@ -93,7 +93,7 @@
               </div><!-- /.card-body -->
             </div>
             </div>
-             <div class="col-sm-6 col-md-12 col-xl-6">
+             <div class="col-12 col-sm-6 col-md-6 col-xl-6">
               <div class="card card-success card-outline">
               <div class="card-header">
                 <h3 class="card-title">

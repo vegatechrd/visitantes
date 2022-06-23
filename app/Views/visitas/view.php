@@ -26,11 +26,11 @@
 <input class="limpiar" type="hidden" name="idVisitante" id="idVisitante" value="<?php echo $datos['visitante_id'];?>">
 
 <div class="row">
-<div class="col-md-7">
+<div class="col-md-7 col-xl-7">
 <fieldset class="border p-2">
     <legend class="w-auto p-2"><i class="fas fa-user"></i> Datos Visitante</legend>
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-8 col-xl-8">
 
     <table class="table table-striped">
         <tr>
@@ -59,15 +59,15 @@
  </tr>
 </table>
 </div>
-<div class="col-md-3">
-    <img id="imgFrente" width="215px" height="200px" style="border: 2px dashed #555;" src="<?php if($datos['foto'] != NULL) { echo base_url().'/'.$datos['foto']; } 
+<div class="col-md-4 col-xl-4">
+    <img id="imgFrente" width="200px" height="200px" style="border: 2px dashed #555;" src="<?php if($datos['foto'] != NULL) { echo base_url().'/'.$datos['foto']; } 
     else { echo base_url().'/dist/img/silueta.png';}?>">
 </div>
 </div>
   </fieldset>
 </div>
 
-<div class="col-md-5">
+<div class="col-md-5 col-xl-5">
 <fieldset class="border p-2">
     <legend class="w-auto p-2"><i class="fas fa-building"></i> Datos Persona Visitada</legend>
     <table class="table table-striped">
@@ -103,7 +103,7 @@
 
 <br>
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-12 col-xl-12">
 <fieldset class="border p-2">
     <legend class="w-auto p-2"><i class="fas fa-home"></i> Datos Visita</legend>
  <div class="row">
@@ -134,15 +134,15 @@
 <input type="text" class="form-control" style="font-size: 20px;" value="<?php date_default_timezone_set('America/Santo_Domingo'); if(!empty($datos['hora_salida'])) {echo date("h:i:s A", strtotime($datos['hora_salida']));}?>" disabled>
 </div>
 </div>
-<div class="col-4">
+<div class="col-4 col-xl-2">
 <label>Motivo Visita</label>
 <input type="text" class="form-control"  value="<?php echo $datos['motivo_visita']; ?>" disabled>
 </div>
-<div class="col-1">
+<div class="col-1 col-xl-2">
 <label>Número Gafete</label>
 <input type="text" class="form-control"  value="<?php echo $datos['no_gafete']; ?>" disabled>
 </div>
-<div class="col-1">
+<div class="col-1 col-xl-2">
 <label>Total Visitantes</label>
 <input type="text" class="form-control"  value="<?php echo $datos['total_visitantes']; ?>" disabled>
 </div>

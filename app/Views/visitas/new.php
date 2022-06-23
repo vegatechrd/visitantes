@@ -61,7 +61,7 @@
 <textarea id="infoVisitante" name="infoVisitante" class="form-control bg-light" rows="4" cols="4" disabled></textarea> 
 </div>
 <div class="form-row">
-   <div class="form-group col-xl-11 col-md-10">
+   <div class="form-group col-xl-10 col-md-10 col-10">
      <label for="listMotivos">Motivo Visita<span class="text-danger"> *</span></label>
         <select class="form-control selectpicker" id="listMotivos" name="listMotivos" data-style="color-select" data-live-search="true" required>
  <option value="">Seleccione el Motivo de la Visita</option>
@@ -73,13 +73,13 @@
 </select>
     </div>
    
-   <div class="form-group col-md-2 col-xl-1 align-self-end">
+   <div class="form-group col-md-2 col-xl-2 col-2 align-self-end">
   <button type="button" id="btnAddMotivo" name="btnAddMotivo" class="btn btn-success" title="Crear Nuevo Motivo Visita"><i class="fas fa-plus"></i></button>
 </div>
    
   </div>
   <div class="form-row">
-   <div class="form-group col-xl-11 col-md-10">
+   <div class="form-group col-xl-10 col-md-10 col-10">
      <label for="listInstitucion">Empresa / Instituci&oacute;n</label>
         <select class="form-control selectpicker" id="listInstitucion" name="listInstitucion" data-style="color-select" data-live-search="true">
  <option value="">Seleccione Empresa o Instituci&oacute;n</option>
@@ -91,7 +91,7 @@
 </select>
     </div>
    
-  <div class="form-group col-md-2 col-xl-1 align-self-end">
+  <div class="form-group col-md-2 col-xl-2 col-2 align-self-end">
   <button type="button" id="btnAddInstitucion" name="btnAddInstitucion" class="btn btn-success" title="Crear Nueva Institución"><i class="fas fa-plus"></i></button>
 </div>
    
@@ -154,7 +154,7 @@
 
 </div> <!--  col-md4 --> 
 
-<div class="col-xl-4 col-md-6">
+<div class="col-xl-4 col-md-6 col-sm-4 col-4">
 <div class="form-group" align="center">
     <label class="form-label">Foto</label>
      <div class="image-upload">
@@ -402,7 +402,7 @@ function encenderCam() {
 function apagarCam() {
     video.pause();
     video.srcObject = null;
-    localstream.getTracks()[0].stop();
+    //localstream.getTracks()[0].stop();
 }
 
 
